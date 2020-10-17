@@ -5,6 +5,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Set;
 
 @Entity
@@ -27,6 +28,7 @@ public class Curso {
 
     private Integer course_score;
 
+    @NotNull
     private Integer course_topic;
 
     @Getter(AccessLevel.NONE)
