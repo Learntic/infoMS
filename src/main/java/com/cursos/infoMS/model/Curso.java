@@ -25,7 +25,7 @@ public class Curso {
     @NotBlank
     private String course_name;
 
-    private Integer course_score;
+    private Float course_score;
 
     @Getter(AccessLevel.NONE)
     @OneToMany(mappedBy = "curso")
