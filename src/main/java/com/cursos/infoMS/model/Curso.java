@@ -27,6 +27,8 @@ public class Curso {
 
     private Integer course_score;
 
+    private Integer course_topics;
+
     @Getter(AccessLevel.NONE)
     @OneToMany(mappedBy = "curso")
     private Set<Tema> temas;
