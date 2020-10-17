@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cursos.infoMS.InfoMsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.344 s - in com.cursos.infoMS.InfoMsApplicationTests
