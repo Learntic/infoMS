@@ -29,7 +29,7 @@ public class Curso {
     private Integer course_score;
 
     @NotNull
-    private Integer course_topic;
+    private Integer course_topics;
 
     @Getter(AccessLevel.NONE)
     @OneToMany(mappedBy = "curso")

@@ -23,6 +23,9 @@ public class Controller {
     @GetMapping("/cursos")
     public List<Curso> cursos() { return  info.verCursos(); }
 
+    @GetMapping("/nombreCurso")
+    public String nombres(@Valid @RequestBody Entero entero) { return  info.verNombre(entero.getEntero()); }
+
     @PostMapping("/temario")
     public List<Tema> temas(@Valid @RequestBody Entero entero) { return info.verTemario(entero.getEntero()); }
 
