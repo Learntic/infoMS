@@ -14,7 +14,7 @@ public interface CourseRepository extends JpaRepository<Curso, Integer> {
     List<Curso> infoCurso(int course_id);
 
     @Query(value = "select course_name from course where course_id = ?1", nativeQuery = true)
-    String nombreCurso(int course_id);
+    String nombreCurso(Integer course_id);
 
     @Query(value = "select * from course", nativeQuery = true)
     List<Curso> listaCursos();
