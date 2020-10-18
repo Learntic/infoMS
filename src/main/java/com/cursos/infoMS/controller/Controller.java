@@ -23,7 +23,7 @@ public class Controller {
     @GetMapping("/cursos")
     public List<Curso> cursos() { return  info.verCursos(); }
 
-    @GetMapping("/nombreCurso")
+    @PostMapping("/nombreCurso")
     public String nombres(@Valid @RequestBody Entero entero) { return  info.verNombre(entero.getEntero()); }
 
     @PostMapping("/temario")
