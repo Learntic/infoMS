@@ -21,7 +21,7 @@ public class Info {
     @Autowired
     TopicRepository topicRepository;
 
-    public String verNombre(int course_id){ return courseRepository.nombreCurso(course_id); }
+    public String verNombre(int course_id){return courseRepository.nombreCurso(course_id); }
 
     public List<Curso> verCursos(){return courseRepository.listaCursos(); }
 
