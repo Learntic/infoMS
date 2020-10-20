@@ -11,10 +11,10 @@ import java.util.List;
 public interface CourseRepository extends JpaRepository<Curso, Integer> {
 
     @Query(value = "select * from course where course_id = ?1", nativeQuery = true)
-    List<Curso> infoCurso(int course_id);
+    Curso cursoCompleto(Integer course_id);
 
-    @Query(value = "select course_name from course where course_id = ?1", nativeQuery = true)
-    String nombreCurso(Integer course_id);
+    @Query(value = "select course_id from course", nativeQuery = true)
+    List<Integer> cursoId();
 
     @Query(value = "select * from course", nativeQuery = true)
     List<Curso> listaCursos();

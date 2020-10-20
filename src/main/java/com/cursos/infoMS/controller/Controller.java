@@ -23,11 +23,13 @@ public class Controller {
     @GetMapping("/cursos")
     public List<Curso> cursos() { return  info.verCursos(); }
 
-    @PostMapping("/nombreCurso")
-    public String nombres(@Valid @RequestBody Entero entero) {
+    @GetMapping("/cursosId")
+    public List<Integer> cursosId() { return  info.verCursosId(); }
+
+    @PostMapping("/cursoCompleto")
+    public Curso cursoCompleto(@Valid @RequestBody Entero entero) {
         System.out.println("hola");
-        System.out.println(info.verNombre(entero.getEntero()));
-        return  info.verNombre(entero.getEntero()); }
+        return  info.cursoCompleto(entero.getEntero()); }
 
     @PostMapping("/temario")
     public List<Tema> temas(@Valid @RequestBody Entero entero) { return info.verTemario(entero.getEntero()); }
