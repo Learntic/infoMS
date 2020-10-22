@@ -5,6 +5,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "topic")
@@ -24,7 +25,11 @@ public class Tema {
     @NotBlank
     private String topic_name;
 
+    @NotBlank
     private String topic_url;
+
+    @NotNull
+    private Integer course_id;
 
     @Getter(AccessLevel.NONE)
     @Setter(AccessLevel.NONE)
