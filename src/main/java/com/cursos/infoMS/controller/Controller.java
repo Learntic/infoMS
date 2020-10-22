@@ -28,7 +28,6 @@ public class Controller {
 
     @PostMapping("/cursoCompleto")
     public Curso cursoCompleto(@Valid @RequestBody Entero entero) {
-        System.out.println("hola");
         return  info.cursoCompleto(entero.getEntero()); }
 
     @PostMapping("/temario")

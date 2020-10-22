@@ -24,6 +24,8 @@ public class Tema {
     @NotBlank
     private String topic_name;
 
+    private String topic_url;
+
     @Getter(AccessLevel.NONE)
     @Setter(AccessLevel.NONE)
     @ManyToOne(cascade = CascadeType.ALL)
